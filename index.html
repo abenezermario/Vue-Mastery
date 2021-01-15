@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vue Example</title>
+
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <!-- Import Vue.js -->
+    <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="nav-bar">
+        <a id="Home" :href="url" style="display: flex">HOME</a>
+      </div>
+
+      <div class="product-display">
+        <div class="product-container">
+          <div class="product-image">
+            <div
+              class="circular"
+              :style="{ backgroundImage: 'url(' + image + ')' }"
+            ></div>
+            <!-- image goes here -->
+            <img v-bind:src="image" />
+            <div>
+              <ul
+                v-for="menu in menus"
+                :key="menu.id"
+                @mouseover="updateImage(menu.image)"
+              >
+                <!-- <li>{{menu.id}}</li> -->
+                <li>{{menu.id}} . {{menu.food}}</li>
+              </ul>
+              <button class="button" @click="addtoCart">
+                AddToCart ({{cart}})
+              </button>
+            </div>
+          </div>
+          <div class="product-info">
+            <h1>{{ product }}</h1>
+            <p>
+              These burger Is literaly the best burger you will ever taste<b>
+                You can't just stop eating {{product}}
+              </b>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Import App -->
+    <script src="./main.js"></script>
+
+    <!-- Mount App -->
+    <script>
+      const mountedApp = app.mount("#app");
+    </script>
+  </body>
+</html>
