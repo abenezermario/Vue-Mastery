@@ -1,5 +1,5 @@
 body {
-  background-color: #fdefef;
+  background-image: url("./bg.jpg");
   margin: 0px;
   font-family: tahoma;
   color: #282828;
@@ -30,6 +30,10 @@ body {
   text-align: center;
   cursor: pointer;
 }
+#img {
+  width: 50%;
+  height: 50%;
+}
 
 .cart {
   margin: 25px 100px;
@@ -57,10 +61,12 @@ body {
 
 h1 {
   font-size: 50px;
+  color: whitesmoke;
 }
 
 h3 {
   font-size: 25px;
+  color: white;
 }
 
 img {
@@ -86,10 +92,11 @@ label {
 
 li {
   font-size: 18px;
+  color: whitesmoke;
 }
 
 .nav-bar {
-  background: linear-gradient(-90deg, #84cf6a, #16c0b0);
+  background-image: url("./bg.jpg");
   height: 60px;
   margin-bottom: 25px;
   -webkit-box-shadow: 0px 2px 15px -12px rgba(0, 0, 0, 0.57);
@@ -103,6 +110,7 @@ li {
 
 p {
   font-size: 22px;
+  color: whitesmoke;
 }
 
 .product-display {

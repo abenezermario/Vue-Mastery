@@ -11,7 +11,7 @@
   <body>
     <div id="app">
       <div class="nav-bar">
-        <a id="Home" :href="url" style="display: flex">HOME</a>
+        <!-- <a id="Home" :href="url" style="display: flex">HOME</a> -->
       </div>
 
       <div class="product-display">
@@ -22,7 +22,7 @@
               :style="{ backgroundImage: 'url(' + image + ')' }"
             ></div>
             <!-- image goes here -->
-            <img v-bind:src="image" />
+            <img id="img" v-bind:src="image" />
             <div>
               <ul
                 v-for="menu in menus"
