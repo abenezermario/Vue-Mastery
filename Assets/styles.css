@@ -31,8 +31,9 @@ body {
   cursor: pointer;
 }
 #img {
-  width: 50%;
+  width:50%;
   height: 50%;
+  display: flex;
 }
 
 .cart {
@@ -128,6 +129,7 @@ p {
 .product-image,
 .product-info {
   width: 50%;
+  height: 50%;
 }
 
 .review-form {
